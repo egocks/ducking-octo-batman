@@ -56,7 +56,7 @@ moved = False
 while True:
 	if GPIO.input(pir_pin):
 		moved = not moved
-		print("movement toggled " + moved)
+		print("movement toggled " + moved.str())
 	if moved:
 		forward(int(2) / 1000.0, int(100))	
 		print("moved forward")
