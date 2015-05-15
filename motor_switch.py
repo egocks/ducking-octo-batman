@@ -49,7 +49,7 @@ def setStep(w1, w2, w3, w4):
 moved = False
 forwarded = False
 while True:
-	if io.input(pir_pin):
+	if GPIO.input(pir_pin):
 		moved = not moved
 	if moved:
 		forward(int(2) / 1000.0, int(100))	
