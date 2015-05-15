@@ -11,6 +11,6 @@ io.setup(pir_pin, io.IN) # activate input
 while True:
 	if io.input(pir_pin):
 		print("PIR ALARM!")
-	if io.input(door_pin):
-		print("DOOR ALARM!")
+#	if io.input(door_pin):
+#		print("DOOR ALARM!")
 	time.sleep(0.5)
