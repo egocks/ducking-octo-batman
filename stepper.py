@@ -1,3 +1,5 @@
+# Source code as seen on the Adafruit tutorial
+# https://learn.adafruit.com/adafruits-raspberry-pi-lesson-10-stepper-motors
 import RPi.GPIO as GPIO
 import time
 
