@@ -50,7 +50,7 @@ moved = False
 forwarded = False
 while True:
 	if io.input(pir_pin):
-		moved = !moved
+		moved = not moved
 	if moved
 		forward(int(2) / 1000.0, int(100))	
 	else
