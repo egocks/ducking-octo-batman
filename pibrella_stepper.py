@@ -1,5 +1,5 @@
 # controlling the stepper motor using Pibrella
-# a variation on motor_switch.py
+# a variation on stepper.py
 
 import pibrella, time
 
@@ -31,13 +31,11 @@ def setStep(w1, w2, w3, w4):
 	pibrella.output.g.write(w3)
 	pibrella.output.h.write(w4)
 
-def button_pressed(pin):
-	if pin.read() == 1:
-		forward(int(2) / 1000.0, int(100))	
-		print("moved forward")
-	else:
-		setStep(0,0,0,0)
-		print("stopped")
-		time.sleep(0.1)
+while True:
+	delay = raw_input("Delay between steps (milliseconds)?")
+	steps = raw_input("How many steps forward?")
+	forward(int(delay) / 1000.0, int(steps))
+	steps = raw_input("How many steps backwards?")
+	backwards(int(delay) / 1000.0, int(steps))
 
-pibrella.button.pressed(button_pressed)
+setStep(0,0,0,0)
