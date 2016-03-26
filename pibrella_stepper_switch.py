@@ -1,5 +1,5 @@
 # controlling the stepper motor using Pibrella
-import pibrella
+import pibrella, time
 
 def forward(delay, steps):
 	for i in range(0, steps):
