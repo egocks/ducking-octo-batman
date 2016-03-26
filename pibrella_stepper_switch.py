@@ -42,4 +42,5 @@ def button_pressed(pin):
 
 pibrella.button.pressed(button_pressed)
 
+setStep(0,0,0,0)
 pibrella.pause()
