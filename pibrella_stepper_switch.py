@@ -41,3 +41,5 @@ def button_pressed(pin):
 		time.sleep(0.1)
 
 pibrella.button.pressed(button_pressed)
+
+pibrella.pause()
